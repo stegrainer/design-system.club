@@ -1,12 +1,12 @@
 {
-  "name": "webring",
+  "name": "design-systems-webring",
   "version": "0.1.0",
-  "description": "A boilerplate for hosting a webring community",
-  "author": "Max Böck",
+  "description": "A webring for design system practitioners.",
+  "author": "Ariel Salminen",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/maxboeck/webring"
+    "url": "http://github.com/arielsalminen/design-system.club"
   },
   "scripts": {
     "start": "ELEVENTY_ENV=development eleventy --serve",
