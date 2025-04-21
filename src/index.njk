@@ -6,26 +6,28 @@ layout: base
 
 <div class="markdown">
   <h2>What's this?</h2>
-  <p>
-    A community of sites around a common topic, also known as a
-    <a href="https://en.wikipedia.org/wiki/Webring">webring</a>. Each member
-    includes a badge on their site that links to the previous and next sites in
-    the ring. Kids in the 90s used to love it!
-  </p>
+
+  <p>A community of sites around a common topic, also known as a <a href="https://en.wikipedia.org/wiki/Webring">webring</a>. Each member includes a badge on their site that links to the previous and next sites in the ring. Kids in the 90s used to love it!</p>
 
   <h2>How to join</h2>
-  <p>
-    To join the webring,
-    <a href="{{ meta.repo }}/compare">open a pull request</a>
-    and supply the name and URL of your site in the `data/members.json` file.
-  </p>
 
-  <h2>Add the banner</h2>
-  <p>Once you've joined the ring, copy this code snippet into your site:</p>
+  <p>To join the webring, copy and paste the <a href="#web-component">web component</a> or the <a href="#code-snippet">code snippet</a> somewhere on your website, and then <a href="{{ meta.repo }}/compare">open a pull request</a> and supply the name and URL of your site in the <a href="{{ meta.repo }}/blob/master/src/data/members.json">members.json</a> file.</p>
+
+  <h2 id="web-component">Add the web component</h2>
+
+  <p>Copy this code snippet into your website to add the web component:</p>
 
   {% highlight 'html' %}{% include 'snippet.njk' %}{% endhighlight %}
 
-  <p>It will render this banner that links to the other members:</p>
+  <p>It will render the below banner that links to the other members. Please note that this is a work-in-progress and the styling will get better over time:</p>
 
-  {% include 'snippet.njk' %}
+  {% include 'web-component.njk' %}
+
+  <h2 id="code-snippet">…Or, add the code snippet</h2>
+
+  <p>If you want more control or to create a custom banner, copy and paste the below html snippet somewhere on your website:</p>
+
+  {% highlight 'html' %}{% include 'snippet.njk' %}{% endhighlight %}
+
+  <p>You can style the presentation of this code however you like, as long as it’s done in an accessible way.</p>
 </div>

@@ -2,11 +2,7 @@
 permalink: "embed.js"
 ---
 
-class WebringBanner extends HTMLElement { constructor() { super();
-this.ringtitle = '{{ meta.title }}'; this.url = '{{ meta.url }}'; this.image =
-this.url + '/assets/images/{{ meta.image }}'; this.membercount =
-{{ members | length }}; this.shadowObj = this.attachShadow({ mode: 'open' });
-this.render(); } getStyles() { return `
+class WebringBanner extends HTMLElement { constructor() { super(); this.ringtitle = '{{ meta.title }}'; this.url = '{{ meta.url }}'; this.image = this.url + '/assets/images/{{ meta.image }}'; this.membercount = {{ members | length }}; this.shadowObj = this.attachShadow({ mode: 'open' }); this.render(); } getStyles() { return `
 <style>
   * {
     box-sizing: border-box;
@@ -131,33 +127,12 @@ this.render(); } getStyles() { return `
       </h3>
       <span>A webring with ${this.membercount} Members</span>
     </div>
-    <a
-      class="webring-banner__info"
-      href="https://en.wikipedia.org/wiki/Webring"
-      title="What's this?"
-      >?</a
-    >
+    <a class="webring-banner__info" href="https://en.wikipedia.org/wiki/Webring" title="What's this?">?</a>
   </div>
   <p class="webring-banner__links">
-    <a
-      href="${this.url}/prev"
-      class="webring-banner__link webring-banner__link--prev"
-      aria-label="Go to previous site"
-      >⬅️Previous</a
-    >
-    <a
-      href="${this.url}/random"
-      class="webring-banner__link webring-banner__link--random"
-      aria-label="Go to a random site"
-      >😎Random</a
-    >
-    <a
-      href="${this.url}/next"
-      class="webring-banner__link webring-banner__link--next"
-      aria-label="Go to next site"
-      >Next ➡️</a
-    >
+    <a href="${this.url}/prev" class="webring-banner__link webring-banner__link--prev" aria-label="Go to previous site">⬅️ Previous</a>
+    <a href="${this.url}/random" class="webring-banner__link webring-banner__link--random" aria-label="Go to a random site">😎Random</a>
+    <a href="${this.url}/next" class="webring-banner__link webring-banner__link--next" aria-label="Go to next site">Next ➡️</a>
   </p>
 </div>
-`; } render() { this.shadowObj.innerHTML = this.getTemplate(); } }
-customElements.define('webring-banner', WebringBanner);
+`; } render() { this.shadowObj.innerHTML = this.getTemplate(); } } customElements.define('webring-banner', WebringBanner);

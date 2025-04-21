@@ -17,7 +17,7 @@ module.exports = function (config) {
         title: node.title,
         url: node.url,
         x,
-        y,
+        y
       };
     });
   });
@@ -27,7 +27,7 @@ module.exports = function (config) {
       return htmlMinifier.minify(content, {
         useShortDoctype: true,
         removeComments: true,
-        collapseWhitespace: true,
+        collapseWhitespace: true
       });
     }
     return content;
@@ -41,11 +41,11 @@ module.exports = function (config) {
       output: "dist",
       includes: "includes",
       layouts: "layouts",
-      data: "data",
+      data: "data"
     },
     templateFormats: ["njk", "md", "11ty.js"],
     htmlTemplateEngine: "njk",
     markdownTemplateEngine: "njk",
-    passthroughFileCopy: true,
+    passthroughFileCopy: true
   };
 };

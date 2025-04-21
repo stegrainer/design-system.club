@@ -1,9 +1,9 @@
-<webring-banner>
-  <p>
-    Member of the <a href="{{ meta.url }}">{{ meta.title }}</a> webring
-  </p>
-  <a href="{{ meta.url }}/prev">Previous</a>
-  <a href="{{ meta.url }}/random">Random</a>
-  <a href="{{ meta.url }}/next">Next</a>
-</webring-banner>
-<script async src="{{ meta.url }}/embed.js" charset="utf-8"></script>
+<nav class="design-systems-webring" aria-labelledby="design-systems-webring">
+  <h2 id="design-systems-webring">Design Systems Webring</h2>
+  <p>This site is a member of the <a rel="external" href="{{ meta.url }}/">Design Systems Webring</a>.</p>
+  <ul>
+    <li><a rel="external" referrerpolicy="strict-origin" href="{{ meta.url }}/prev">Previous website</a></li>
+    <li><a rel="external" referrerpolicy="strict-origin" href="{{ meta.url }}/random">Random website</a></li>
+    <li><a rel="external" referrerpolicy="strict-origin" href="{{ meta.url }}/next">Next website</a></li>
+  </ul>
+</nav>

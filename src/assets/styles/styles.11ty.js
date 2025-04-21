@@ -15,7 +15,7 @@ module.exports = class {
     return {
       permalink: `/assets/styles/main.css`,
       eleventyExcludeFromCollections: true,
-      entryPath,
+      entryPath
     };
   }
 
