@@ -2,7 +2,7 @@
 permalink: "embed.js"
 ---
 
-class WebringBanner extends HTMLElement { constructor() { super(); this.ringtitle = '{{ meta.title }}'; this.url = '{{ meta.url }}'; this.image = this.url + '/assets/images/{{ meta.image }}'; this.membercount = {{ members | length }}; this.shadowObj = this.attachShadow({ mode: 'open' }); this.render(); } getStyles() { return `
+class DesignSystemsWebring extends HTMLElement { constructor() { super(); this.ringtitle = '{{ meta.title }}'; this.url = '{{ meta.url }}'; this.image = this.url + '/assets/images/{{ meta.image }}'; this.membercount = {{ members | length }}; this.shadowObj = this.attachShadow({ mode: 'open' }); this.render(); } getStyles() { return `
 <style>
   * {
     box-sizing: border-box;
@@ -135,4 +135,4 @@ class WebringBanner extends HTMLElement { constructor() { super(); this.ringtitl
     <a href="${this.url}/next" class="webring-banner__link webring-banner__link--next" aria-label="Go to next site">Next ➡️</a>
   </p>
 </div>
-`; } render() { this.shadowObj.innerHTML = this.getTemplate(); } } customElements.define('webring-banner', WebringBanner);
+`; } render() { this.shadowObj.innerHTML = this.getTemplate(); } } customElements.define('design-systems-webring', DesignSystemsWebring);
