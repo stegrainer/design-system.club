@@ -1,17 +1,15 @@
-## Adding your site
+## Adding your website
 
-To add a new site to the webring, please supply the following information:
+To add a new website to the webring, please supply the following information:
 
-- Name of your site
-- URL of your site
-- URL of your RSS feed (optional)
+- Name of your website
+- URL of your website
 
 Example:
 
 ```json
 {
-  "title": "Frank's awesome site",
-  "url": "https://www.franks-awesome-site.org",
-  "feed": null
+  "title": "Arielle's awesome site",
+  "url": "https://www.arielles-awesome-site.org"
 }
 ```
